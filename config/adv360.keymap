@@ -84,11 +84,11 @@
 
         L01_QWERTY {
             bindings = <
-&none  &none         &none                &none  &none  &none  &none                                                &none      &none  &none  &none  &none  &none  &none
-&none  &none         &none                &none  &none  &none  &none                                                &none      &none  &none  &none  &none  &none  &none
-&none  &ht_mo_l 7 A  &ht_kp_l LEFT_ALT S  &none  &none  &none  &none          &none    &none      &none  &none      &none      &none  &none  &none  &none  &none  &none
-&none  &none         &none                &none  &none  &none                          &none      &none                        &none  &none  &none  &none  &none  &none
-&none  &none         &none                &none  &none         &kp BACKSPACE  &kp DEL  &none      &none  &kp ENTER  &kp SPACE         &none  &none  &none  &none  &none
+&none  &none         &none                &none             &none              &none            &none                                                &none      &none  &none  &none  &none  &none  &none
+&none  &none         &none                &none             &none              &none            &none                                                &none      &none  &none  &none  &none  &none  &none
+&none  &ht_mo_l 7 A  &ht_kp_l LEFT_ALT S  &ht_kp_l LCTRL D  &ht_kp_l LSHIFT F  &ht_kp_l LWIN G  &none          &none    &none      &none  &none      &none      &none  &none  &none  &none  &none  &none
+&none  &none         &none                &none             &none              &none                                    &none      &none                        &none  &none  &none  &none  &none  &none
+&none  &none         &none                &none             &none                               &kp BACKSPACE  &kp DEL  &none      &none  &kp ENTER  &kp SPACE         &none  &none  &none  &none  &none
             >;
         };
 
