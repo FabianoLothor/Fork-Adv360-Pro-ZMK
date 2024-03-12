@@ -290,7 +290,7 @@
             >;
         };
 
-        L07 {
+        L07_MTGAP {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
@@ -356,7 +356,7 @@
             >;
         };
 
-        L08 {
+        L08_SEMIMAK {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
