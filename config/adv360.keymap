@@ -13,19 +13,9 @@
 
         #endif
 
-        hm: homerow_mods {
+        ht_kp_r: ht_kp_r {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
-        hml: hml {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HML";
+            label = "HT_KP_R";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -37,9 +27,9 @@
             hold-trigger-on-release;
         };
 
-        hmr: hmr {
+        ht_kp_l: ht_kp_l {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
+            label = "HT_KP_L";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -50,6 +40,33 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
         };
+
+        ht_mo_r: ht_mo_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MO_R";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-key-positions = <0 1 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67 1 2 3 4 5 6 15 16 17 18 19 20 29 30 31 32 33 34 48 49 50 51>;
+            hold-trigger-on-release;
+            bindings = <&mo>, <&kp>;
+        };
+
+        ht_mo_l: ht_mo_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MO_L";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&mo>, <&kp>;
+
+            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
+        };
     };
 
     keymap {
@@ -57,21 +74,21 @@
 
         L00_CUSTOM {
             bindings = <
-&kp ESC    &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &none                                                    &mo 7      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp ESC    &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &none                                                    &mo 8      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q      &kp W      &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &kp CAPS   &kp A      &kp S      &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X      &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 6      &kp GRAVE  &kp EQUAL  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 6
+&mo 7      &kp GRAVE  &kp EQUAL  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 7
             >;
         };
 
         L01_QWERTY {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+&none  &none         &none                &none  &none  &none  &none                                                &none      &none  &none  &none  &none  &none  &none
+&none  &none         &none                &none  &none  &none  &none                                                &none      &none  &none  &none  &none  &none  &none
+&none  &ht_mo_l 7 A  &ht_kp_l LEFT_ALT S  &none  &none  &none  &none          &none    &none      &none  &none      &none      &none  &none  &none  &none  &none  &none
+&none  &none         &none                &none  &none  &none                          &none      &none                        &none  &none  &none  &none  &none  &none
+&none  &none         &none                &none  &none         &kp BACKSPACE  &kp DEL  &none      &none  &kp ENTER  &kp SPACE         &none  &none  &none  &none  &none
             >;
         };
 
@@ -243,9 +260,19 @@
             >;
         };
 
-        fn {
+        L06_SYMBOLS {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &none                                       &mo 7   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        L07_ACTIONS {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &none                                       &none   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
@@ -258,7 +285,7 @@
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
