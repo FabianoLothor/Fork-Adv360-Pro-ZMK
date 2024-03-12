@@ -76,13 +76,33 @@
             >;
         };
 
-        layer_4 {
+        L01_QWERTY {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+        };
+
+        L02_DVORAK {
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+        };
+
+        L03_COLEMAK {
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
     };
