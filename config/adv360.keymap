@@ -44,6 +44,8 @@
 &kp LSHFT  &kp Z      &kp X      &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &mo 11     &kp GRAVE  &kp EQUAL  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 11
             >;
+
+            label = "CUSTOM";
         };
 
         L01_QWERTY {
