@@ -69,6 +69,22 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        L00_TO_L01 {
+            bindings = <&to 1>;
+            key-positions = <65 70>;
+            layers = <0>;
+        };
+
+        L00_TO_L05 {
+            bindings = <&to 5>;
+            key-positions = <66 69>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
