@@ -158,11 +158,6 @@
             layers = <0>;
         };
 
-        BATTERY_STATUS {
-            bindings = <&rgb_ug RGB_MEFS_CMD 5>;
-            key-positions = <53 52>;
-        };
-
         TOGGLE_LEDS {
             bindings = <&bl BL_TOG>;
             key-positions = <67 68>;
@@ -249,16 +244,6 @@
 &none          &none         &none         &none         &none         &none         &none   &none  &none            &none        &none  &none   &none         &none         &none         &none         &none         &none
 &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                 &none            &none                       &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
 &none          &none         &none         &none         &none                       &none   &none  &bootloader      &bootloader  &none  &none                 &none         &none         &none         &none         &none
-            >;
-        };
-
-        mod {
-            bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
     };
