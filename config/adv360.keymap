@@ -153,6 +153,18 @@
             key-positions = <69 70>;
             layers = <0>;
         };
+
+        BT_NEXT {
+            bindings = <&bt BT_NXT>;
+            key-positions = <35 38>;
+            layers = <0>;
+        };
+
+        BT_PREV {
+            bindings = <&bt BT_PRV>;
+            key-positions = <36 37>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -230,11 +242,11 @@
 
         L07_ACTIONS {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &none                                  &none  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&none   &none   &none   &none   &none   &none   &none                                  &none  &none   &none   &none   &none    &none    &none
-&none   &none   &none   &none   &none   &none   &none  &none  &none      &none  &none  &none  &none   &none   &none   &none    &none    &none
-&none   &none   &none   &none   &none   &none                 &none      &none                &none   &none   &none   &none    &none    &none
-&none   &none   &none   &none   &none           &none  &none  &none      &none  &none  &none          &none   &none   &none    &none    &none
+&none  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                  &kp F7  &kp F8        &kp F9        &kp F10       &kp F11       &kp F12       &none
+&none  &none         &none         &none         &none         &none         &none                                   &none   &none         &none         &none         &none         &none         &none
+&none  &none         &none         &none         &none         &none         &none   &none  &none      &none  &none  &none   &none         &none         &none         &none         &none         &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                 &none      &none                 &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
+&none  &none         &none         &none         &none                       &none   &none  &none      &none  &none  &none                 &none         &none         &none         &none         &none
             >;
         };
 
