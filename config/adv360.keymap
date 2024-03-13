@@ -172,11 +172,11 @@
 
         BATTERY_STATUS {
             bindings = <&rgb_ug RGB_MEFS_CMD 5>;
-            key-positions = <52 53>;
+            key-positions = <53 52>;
         };
 
         TOGGLE_LEDS {
-            bindings = <&rgb_ug RGB_TOG>;
+            bindings = <&bl BL_TOG>;
             key-positions = <67 68>;
         };
     };
