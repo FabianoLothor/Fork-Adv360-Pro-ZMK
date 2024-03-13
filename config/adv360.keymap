@@ -157,19 +157,27 @@
         BT_NEXT {
             bindings = <&bt BT_NXT>;
             key-positions = <35 38>;
-            layers = <0>;
         };
 
         BT_PREV {
             bindings = <&bt BT_PRV>;
             key-positions = <36 37>;
-            layers = <0>;
         };
 
         BT_CLEAR {
             bindings = <&bt BT_CLR>;
             key-positions = <35 36 37 38>;
             layers = <0>;
+        };
+
+        BATTERY_STATUS {
+            bindings = <&rgb_ug RGB_ON>;
+            key-positions = <52 53>;
+        };
+
+        TOGGLE_LEDS {
+            bindings = <&rgb_ug RGB_TOG>;
+            key-positions = <67 68>;
         };
     };
 
