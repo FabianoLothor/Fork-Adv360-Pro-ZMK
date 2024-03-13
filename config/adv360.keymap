@@ -16,6 +16,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HT_KP_R";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <300>;
@@ -29,6 +30,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HT_KP_L";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <300>;
@@ -139,6 +141,18 @@
             key-positions = <66 69>;
             layers = <5>;
         };
+
+        BL_L {
+            bindings = <&bootloader>;
+            key-positions = <65 66>;
+            layers = <0>;
+        };
+
+        BL_R {
+            bindings = <&bootloader>;
+            key-positions = <69 70>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -156,31 +170,31 @@
 
         L01_QWERTY {
             bindings = <
-&none  &none            &none                &none             &none              &none            &none                                                &none      &none            &none              &none             &none                 &none            &none
-&none  &kp Q            &kp W                &kp E             &kp R              &kp T            &none                                                &none      &kp Y            &kp U              &kp I             &kp O                 &kp P            &none
-&none  &ht_kp_l LWIN A  &ht_kp_l LEFT_ALT S  &ht_kp_l LSHIFT D  &ht_kp_l LCTRL F  &ht_mo_l 7 G  &none          &none    &none      &none  &none      &none      &ht_mo_r 7 H  &ht_kp_r RCTRL J  &ht_kp_r RSHIFT K  &ht_kp_r RIGHT_ALT L &ht_kp_r RWIN SEMI  &none
-&none  &kp Z            &kp X                &kp C             &kp V              &kp B                                    &none      &none                        &kp N            &kp M              &kp COMMA         &kp DOT               &kp FSLH         &none
-&none  &none            &none                &none             &none                               &kp BACKSPACE  &kp DEL  &none      &none  &kp ENTER  &kp SPACE                   &none              &none             &none                 &none            &none
+&none  &none            &none                &none              &none             &none         &none                                                &none      &none         &none             &none              &none                 &none               &none
+&none  &kp Q            &kp W                &kp E              &kp R             &kp T         &none                                                &none      &kp Y         &kp U             &kp I              &kp O                 &kp P               &none
+&none  &ht_kp_l LWIN A  &ht_kp_l LEFT_ALT S  &ht_kp_l LSHIFT D  &ht_kp_l LCTRL F  &ht_mo_l 7 G  &none          &none    &none      &none  &none      &none      &ht_mo_r 7 H  &ht_kp_r RCTRL J  &ht_kp_r RSHIFT K  &ht_kp_r RIGHT_ALT L  &ht_kp_r RWIN SEMI  &none
+&none  &kp Z            &kp X                &kp C              &kp V             &kp B                                 &none      &none                        &kp N         &kp M             &kp COMMA          &kp DOT               &kp FSLH            &none
+&none  &none            &none                &none              &none                           &kp BACKSPACE  &kp DEL  &none      &none  &kp ENTER  &kp SPACE                &none             &none              &none                 &none               &none
             >;
         };
 
         L02_COLEMAK-DHM {
             bindings = <
-&none  &none            &none                &none             &none              &none            &none                                                &none      &none            &none              &none             &none                 &none         &none
-&none  &kp Q            &kp W                &kp F             &kp P              &kp B            &none                                                &none      &kp J            &kp L              &kp U             &kp Y                 &kp SEMI      &none
-&none  &ht_kp_l LWIN A  &ht_kp_l LEFT_ALT R  &ht_kp_l LSHIFT S  &ht_kp_l LCTRL T  ht_mo_l 7 G  &none          &none    &none      &none  &none      &none      &ht_mo_r 7 M  &ht_kp_r RCTRL N  &ht_kp_r RSHIFT E  &ht_kp_r RIGHT_ALT I  &ht_kp_r RWIN O  &none
-&none  &kp Z            &kp X                &kp C             &kp D              &kp V                                    &none      &none                        &kp K            &kp H              &kp COMMA         &kp DOT               &kp FSLH      &none
-&none  &none            &none                &none             &none                               &kp BACKSPACE  &kp DEL  &none      &none  &kp ENTER  &kp SPACE                   &none              &none             &none                 &none         &none
+&none  &none            &none                &none              &none                         &none  &none                                            &none         &none             &none              &none                 &none            &none     &none
+&none  &kp Q            &kp W                &kp F              &kp P                         &kp B  &none                                            &none         &kp J             &kp L              &kp U                 &kp Y            &kp SEMI  &none
+&none  &ht_kp_l LWIN A  &ht_kp_l LEFT_ALT R  &ht_kp_l LSHIFT S  &ht_kp_l LCTRL T ht_mo_l 7 G  &none  &none    &none  &none      &none      &none      &ht_mo_r 7 M  &ht_kp_r RCTRL N  &ht_kp_r RSHIFT E  &ht_kp_r RIGHT_ALT I  &ht_kp_r RWIN O  &none     &none
+&kp Z  &kp X            &kp C                &kp D              &kp V                         &none                  &none      &kp K                               &kp H             &kp COMMA          &kp DOT               &kp FSLH         &none     &none
+&none  &none            &none                &none              &kp BACKSPACE                        &kp DEL  &none  &none      &kp ENTER  &kp SPACE  &none                           &none              &none                 &none            &none
             >;
         };
 
         L03_DVORAK {
             bindings = <
-&none  &none            &none                &none             &none              &none            &none                                                &none      &none            &none              &none             &none                 &none         &none
-&none  &kp APOS         &kp COMMA            &kp DOT           &kp P              &kp Y            &none                                                &none      &kp F            &kp G              &kp C             &kp R                 &kp L         &none
-&none  &ht_kp_l LWIN A  &ht_kp_l LEFT_ALT O  &ht_kp_l LSHIFT E  &ht_kp_l LCTRL U  ht_mo_l 7 I  &none          &none    &none      &none  &none      &none      &ht_mo_r 7 D  &ht_kp_r RCTRL H  &ht_kp_r RSHIFT T  &ht_kp_r RIGHT_ALT N  &ht_kp_r RWIN S  &none
-&none  &kp SEMI         &kp Q                &kp J             &kp K              &kp X                                    &none      &none                        &kp B            &kp M              &kp W             &kp V                 &kp Z         &none
-&none  &none            &none                &none             &none                               &kp BACKSPACE  &kp DEL  &none      &none  &kp ENTER  &kp SPACE                   &none              &none             &none                 &none         &none
+&none     &none            &none                &none              &none                         &none  &none                                            &none         &none             &none              &none                 &none            &none  &none
+&none     &kp APOS         &kp COMMA            &kp DOT            &kp P                         &kp Y  &none                                            &none         &kp F             &kp G              &kp C                 &kp R            &kp L  &none
+&none     &ht_kp_l LWIN A  &ht_kp_l LEFT_ALT O  &ht_kp_l LSHIFT E  &ht_kp_l LCTRL U ht_mo_l 7 I  &none  &none    &none  &none      &none      &none      &ht_mo_r 7 D  &ht_kp_r RCTRL H  &ht_kp_r RSHIFT T  &ht_kp_r RIGHT_ALT N  &ht_kp_r RWIN S  &none  &none
+&kp SEMI  &kp Q            &kp J                &kp K              &kp X                         &none                  &none      &kp B                               &kp M             &kp W              &kp V                 &kp Z            &none  &none
+&none     &none            &none                &none              &kp BACKSPACE                        &kp DEL  &none  &none      &kp ENTER  &kp SPACE  &none                           &none              &none                 &none            &none
             >;
         };
 
