@@ -70,22 +70,16 @@
     combos {
         compatible = "zmk,combos";
 
-        L00_TO_L01 {
-            bindings = <&to 1>;
-            key-positions = <65 70>;
-            layers = <0>;
-        };
-
         L00_TO_L05 {
             bindings = <&to 5>;
             key-positions = <66 69>;
             layers = <0>;
         };
 
-        L01_TO_L02 {
-            bindings = <&to 2>;
+        L00_TO_L01 {
+            bindings = <&to 1>;
             key-positions = <65 70>;
-            layers = <1>;
+            layers = <0>;
         };
 
         L01_TO_L00 {
@@ -94,10 +88,10 @@
             layers = <1>;
         };
 
-        L02_TO_L03 {
-            bindings = <&to 3>;
+        L01_TO_L02 {
+            bindings = <&to 2>;
             key-positions = <65 70>;
-            layers = <2>;
+            layers = <1>;
         };
 
         L02_TO_L01 {
@@ -106,10 +100,10 @@
             layers = <2>;
         };
 
-        L03_TO_L04 {
-            bindings = <&to 4>;
+        L02_TO_L03 {
+            bindings = <&to 3>;
             key-positions = <65 70>;
-            layers = <3>;
+            layers = <2>;
         };
 
         L03_TO_L02 {
@@ -118,15 +112,21 @@
             layers = <3>;
         };
 
-        L04_TO_L05 {
-            bindings = <&to 5>;
+        L03_TO_L04 {
+            bindings = <&to 4>;
             key-positions = <65 70>;
-            layers = <4>;
+            layers = <3>;
         };
 
         L04_TO_L03 {
             bindings = <&to 3>;
             key-positions = <66 69>;
+            layers = <4>;
+        };
+
+        L04_TO_L05 {
+            bindings = <&to 5>;
+            key-positions = <65 70>;
             layers = <4>;
         };
 
