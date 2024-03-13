@@ -165,6 +165,12 @@
             key-positions = <36 37>;
             layers = <0>;
         };
+
+        BT_CLEAR {
+            bindings = <&bt BT_CLR>;
+            key-positions = <35 36 37 38>;
+            layers = <0>;
+        };
     };
 
     keymap {
