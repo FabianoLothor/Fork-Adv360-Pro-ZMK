@@ -6,172 +6,187 @@
 
 / {
     behaviors {
-        #include "macros.dtsi"
-        #include "version.dtsi"
-        #ifndef VERSION_MACRO
+        BHT_KP_R: BHT_KP_R {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BHT_KP_R";
+            bindings = <&kp>, <&kp>;
 
-        macro_ver: macro_ver {
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            require-prior-idle-ms = <200>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
+            hold-trigger-on-release;
+        };
+
+        BHT_KP_L: BHT_KP_L {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BHT_KP_L";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            require-prior-idle-ms = <200>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
+        };
+
+        BHT_MO_R: BHT_MO_R {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BHT_MO_R";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            require-prior-idle-ms = <200>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
+            hold-trigger-on-release;
+            bindings = <&mo>, <&kp>;
+        };
+
+        BHT_MO_L: BHT_MO_L {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BHT_MO_L";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            require-prior-idle-ms = <200>;
+            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
+            hold-trigger-on-release;
+            bindings = <&mo>, <&kp>;
+        };
+
+        BM_Q: BM_Q {
             compatible = "zmk,behavior-macro";
-            label = "macro_version";
+            label = "BM_Q";
             #binding-cells = <0>;
-            bindings = <&kp RET>;
+            bindings = <&kp SQT>, <&kp SQT>, <&kp LEFT>;
         };
-
-        #endif
-
-        ht_kp_r: ht_kp_r {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_KP_R";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <250>;
-            require-prior-idle-ms = <200>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
-            hold-trigger-on-release;
+        BM_DQ: BM_DQ {
+            compatible = "zmk,behavior-macro";
+            label = "BM_DQ";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp DQT>, <&kp LEFT>;
         };
-
-        ht_kp_l: ht_kp_l {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_KP_L";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <250>;
-            require-prior-idle-ms = <200>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
+        BM_CB: BM_CB {
+            compatible = "zmk,behavior-macro";
+            label = "BM_CB";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
         };
-
-        ht_mo_r: ht_mo_r {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_MO_R";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <250>;
-            require-prior-idle-ms = <200>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
-            hold-trigger-on-release;
-            bindings = <&mo>, <&kp>;
+        BM_P: BM_P {
+            compatible = "zmk,behavior-macro";
+            label = "BM_P";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
         };
-
-        ht_mo_l: ht_mo_l {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_MO_L";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <250>;
-            require-prior-idle-ms = <200>;
-            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
-            hold-trigger-on-release;
-            bindings = <&mo>, <&kp>;
+        BM_B: BM_B {
+            compatible = "zmk,behavior-macro";
+            label = "BM_B";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        L00_TO_L05 {
+        C_L00_TO_L05 {
             bindings = <&to 5>;
             key-positions = <66 69>;
             layers = <0>;
         };
 
-        L00_TO_L01 {
+        C_L00_TO_L01 {
             bindings = <&to 1>;
             key-positions = <65 70>;
             layers = <0>;
         };
 
-        L01_TO_L00 {
+        C_L01_TO_L00 {
             bindings = <&to 0>;
             key-positions = <66 69>;
             layers = <1>;
         };
 
-        L01_TO_L02 {
+        C_L01_TO_L02 {
             bindings = <&to 2>;
             key-positions = <65 70>;
             layers = <1>;
         };
 
-        L02_TO_L01 {
+        C_L02_TO_L01 {
             bindings = <&to 1>;
             key-positions = <66 69>;
             layers = <2>;
         };
 
-        L02_TO_L03 {
+        C_L02_TO_L03 {
             bindings = <&to 3>;
             key-positions = <65 70>;
             layers = <2>;
         };
 
-        L03_TO_L02 {
+        C_L03_TO_L02 {
             bindings = <&to 2>;
             key-positions = <66 69>;
             layers = <3>;
         };
 
-        L03_TO_L04 {
+        C_L03_TO_L04 {
             bindings = <&to 4>;
             key-positions = <65 70>;
             layers = <3>;
         };
 
-        L04_TO_L03 {
+        C_L04_TO_L03 {
             bindings = <&to 3>;
             key-positions = <66 69>;
             layers = <4>;
         };
 
-        L04_TO_L05 {
+        C_L04_TO_L05 {
             bindings = <&to 5>;
             key-positions = <65 70>;
             layers = <4>;
         };
 
-        L05_TO_L00 {
+        C_L05_TO_L00 {
             bindings = <&to 0>;
             key-positions = <65 70>;
             layers = <5>;
         };
 
-        L05_TO_L04 {
+        C_L05_TO_L04 {
             bindings = <&to 4>;
             key-positions = <66 69>;
             layers = <5>;
         };
 
-        BT_NEXT {
+        C_BT_NEXT {
             bindings = <&bt BT_NXT>;
             key-positions = <35 38>;
         };
 
-        BT_PREV {
+        C_BT_PREV {
             bindings = <&bt BT_PRV>;
             key-positions = <36 37>;
         };
 
-        BT_CLEAR {
+        C_BT_CLEAR {
             bindings = <&bt BT_CLR>;
             key-positions = <35 36 37 38>;
             layers = <0>;
         };
 
-        TOGGLE_LEDS {
+        C_TOGGLE_LEDS {
             bindings = <&bl BL_TOG>;
             key-positions = <67 68>;
         };
-    };
-
-    macros {
     };
 
     keymap {
@@ -191,7 +206,7 @@
             bindings = <
 &none  &none            &none                &none              &none             &none         &none                                           &none      &none         &none             &none              &none                 &none               &none
 &none  &kp Q            &kp W                &kp E              &kp R             &kp T         &none                                           &none      &kp Y         &kp U             &kp I              &kp O                 &kp P               &none
-&none  &ht_kp_l LWIN A  &ht_kp_l LEFT_ALT S  &ht_kp_l LSHIFT D  &ht_kp_l LCTRL F  &ht_mo_l 7 G  &none     &none    &none      &none  &none      &none      &ht_mo_r 7 H  &ht_kp_r RCTRL J  &ht_kp_r RSHIFT K  &ht_kp_r RIGHT_ALT L  &ht_kp_r RWIN SEMI  &none
+&none  &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT S  &BHT_KP_L LSHIFT D  &BHT_KP_L LCTRL F  &BHT_MO_L 7 G  &none     &none    &none      &none  &none      &none      &BHT_MO_R 7 H  &BHT_KP_R RCTRL J  &BHT_KP_R RSHIFT K  &BHT_KP_R RIGHT_ALT L  &BHT_KP_R RWIN SEMI  &none
 &none  &kp Z            &kp X                &kp C              &kp V             &kp B                            &none      &none                        &kp N         &kp M             &kp COMMA          &kp DOT               &kp FSLH            &none
 &none  &none            &none                &none              &none                           &kp BSPC  &kp DEL  &none      &none  &kp ENTER  &kp SPACE                &none             &none              &none                 &none               &none
             >;
@@ -201,7 +216,7 @@
             bindings = <
 &none  &none            &none                &none              &none             &none         &none                                           &none      &none         &none             &none              &none                 &none            &none
 &none  &kp Q            &kp W                &kp F              &kp P             &kp B         &none                                           &none      &kp J         &kp L             &kp U              &kp Y                 &kp SEMI         &none
-&none  &ht_kp_l LWIN A  &ht_kp_l LEFT_ALT R  &ht_kp_l LSHIFT S  &ht_kp_l LCTRL T  &ht_mo_l 7 G  &none     &none    &none      &none  &none      &none      &ht_mo_r 7 M  &ht_kp_r RCTRL N  &ht_kp_r RSHIFT E  &ht_kp_r RIGHT_ALT I  &ht_kp_r RWIN O  &none
+&none  &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT R  &BHT_KP_L LSHIFT S  &BHT_KP_L LCTRL T  &BHT_MO_L 7 G  &none     &none    &none      &none  &none      &none      &BHT_MO_R 7 M  &BHT_KP_R RCTRL N  &BHT_KP_R RSHIFT E  &BHT_KP_R RIGHT_ALT I  &BHT_KP_R RWIN O  &none
 &none  &kp Z            &kp X                &kp C              &kp D             &kp V                            &none      &none                        &kp K         &kp H             &kp COMMA          &kp DOT               &kp FSLH         &none
 &none  &none            &none                &none              &none                           &kp BSPC  &kp DEL  &none      &none  &kp ENTER  &kp SPACE                &none             &none              &none                 &none            &none
             >;
@@ -211,7 +226,7 @@
             bindings = <
 &none  &none            &none                &none              &none             &none         &none                                           &none      &none         &none             &none              &none                 &none            &none
 &none  &kp APOS         &kp COMMA            &kp DOT            &kp P             &kp Y         &none                                           &none      &kp F         &kp G             &kp C              &kp R                 &kp L            &none
-&none  &ht_kp_l LWIN A  &ht_kp_l LEFT_ALT O  &ht_kp_l LSHIFT E  &ht_kp_l LCTRL U  &ht_mo_l 7 I  &none     &none    &none      &none  &none      &none      &ht_mo_r 7 D  &ht_kp_r RCTRL H  &ht_kp_r RSHIFT T  &ht_kp_r RIGHT_ALT N  &ht_kp_r RWIN S  &none
+&none  &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT O  &BHT_KP_L LSHIFT E  &BHT_KP_L LCTRL U  &BHT_MO_L 7 I  &none     &none    &none      &none  &none      &none      &BHT_MO_R 7 D  &BHT_KP_R RCTRL H  &BHT_KP_R RSHIFT T  &BHT_KP_R RIGHT_ALT N  &BHT_KP_R RWIN S  &none
 &none  &kp SEMI         &kp Q                &kp J              &kp K             &kp X                            &none      &none                        &kp B         &kp M             &kp W              &kp V                 &kp Z            &none
 &none  &none            &none                &none              &none                           &kp BSPC  &kp DEL  &none      &none  &kp ENTER  &kp SPACE                &none             &none              &none                 &none            &none
             >;
