@@ -170,7 +170,7 @@
         };
 
         C_RB {
-            bindings = <&BM_SQ>;
+            bindings = <&BM_RB>;
             key-positions = <32 41>;
             layers = <1 2 3 4 5>;
         };
@@ -191,7 +191,7 @@
             bindings = <&BM_AB>;
             key-positions = <29 44>;
             layers = <1 2 3 4 5>;
-    };
+        };
     };
 
     macros {
