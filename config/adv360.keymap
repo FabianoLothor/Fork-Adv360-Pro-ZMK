@@ -157,8 +157,33 @@
             key-positions = <67 68>;
         };
 
-        C_SQ {
+        C_DQ {
             bindings = <&BM_DQ>;
+            key-positions = <33 40>;
+        };
+
+        C_SQ {
+            bindings = <&BM_SQ>;
+            key-positions = <33 40>;
+        };
+
+        C_RB {
+            bindings = <&BM_SQ>;
+            key-positions = <33 40>;
+        };
+
+        C_SB {
+            bindings = <&BM_SB>;
+            key-positions = <33 40>;
+        };
+
+        C_CB {
+            bindings = <&BM_CB>;
+            key-positions = <33 40>;
+        };
+
+        C_AB {
+            bindings = <&BM_AB>;
             key-positions = <33 40>;
         };
     };
