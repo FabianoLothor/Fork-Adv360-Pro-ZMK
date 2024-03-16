@@ -159,9 +159,9 @@
     };
 
     macros {
-        BM_Q: BM_Q {
+        BM_SQ: BM_SQ {
             compatible = "zmk,behavior-macro";
-            label = "BM_Q";
+            label = "BM_SQ";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp SQT &kp LEFT>;
         };
@@ -173,6 +173,13 @@
             bindings = <&kp DQT &kp DQT &kp LEFT>;
         };
 
+        BM_AB: BM_AB {
+            compatible = "zmk,behavior-macro";
+            label = "BM_AB";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp GTS &kp LEFT>;
+        };
+
         BM_CB: BM_CB {
             compatible = "zmk,behavior-macro";
             label = "BM_CB";
@@ -180,16 +187,16 @@
             bindings = <&kp LBRC &kp RBRC &kp LEFT>;
         };
 
-        BM_P: BM_P {
+        BM_RB: BM_RB {
             compatible = "zmk,behavior-macro";
-            label = "BM_P";
+            label = "BM_RB";
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR &kp LEFT>;
         };
 
-        BM_B: BM_B {
+        BM_SB: BM_SB {
             compatible = "zmk,behavior-macro";
-            label = "BM_B";
+            label = "BM_SB";
             #binding-cells = <0>;
             bindings = <&kp LBKT &kp RBKT &kp LEFT>;
         };
