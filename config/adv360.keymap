@@ -213,7 +213,7 @@
             compatible = "zmk,behavior-macro";
             label = "BM_AB";
             #binding-cells = <0>;
-            bindings = <&kp LT &kp GTS &kp LEFT>;
+            bindings = <&kp LT &kp GT &kp LEFT>;
         };
 
         BM_CB: BM_CB {
