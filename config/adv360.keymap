@@ -59,41 +59,6 @@
             hold-trigger-on-release;
             bindings = <&mo>, <&kp>;
         };
-
-        BM_Q: BM_Q {
-            compatible = "zmk,behavior-macro";
-            label = "BM_Q";
-            #binding-cells = <0>;
-            bindings = <&kp SQT &kp SQT &kp LEFT>;
-        };
-
-        BM_DQ: BM_DQ {
-            compatible = "zmk,behavior-macro";
-            label = "BM_DQ";
-            #binding-cells = <0>;
-            bindings = <&kp DQT &kp DQT &kp LEFT>;
-        };
-
-        BM_CB: BM_CB {
-            compatible = "zmk,behavior-macro";
-            label = "BM_CB";
-            #binding-cells = <0>;
-            bindings = <&kp LBRC &kp RBRC &kp LEFT>;
-        };
-
-        BM_P: BM_P {
-            compatible = "zmk,behavior-macro";
-            label = "BM_P";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
-        };
-
-        BM_B: BM_B {
-            compatible = "zmk,behavior-macro";
-            label = "BM_B";
-            #binding-cells = <0>;
-            bindings = <&kp LBKT &kp RBKT &kp LEFT>;
-        };
     };
 
     combos {
@@ -194,11 +159,39 @@
     };
 
     macros {
-        new_macro: new_macro {
+        BM_Q: BM_Q {
             compatible = "zmk,behavior-macro";
+            label = "BM_Q";
             #binding-cells = <0>;
-            bindings = <&none>;
-            label = "NEW_MACRO";
+            bindings = <&kp SQT &kp SQT &kp LEFT>;
+        };
+
+        BM_DQ: BM_DQ {
+            compatible = "zmk,behavior-macro";
+            label = "BM_DQ";
+            #binding-cells = <0>;
+            bindings = <&kp DQT &kp DQT &kp LEFT>;
+        };
+
+        BM_CB: BM_CB {
+            compatible = "zmk,behavior-macro";
+            label = "BM_CB";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC &kp RBRC &kp LEFT>;
+        };
+
+        BM_P: BM_P {
+            compatible = "zmk,behavior-macro";
+            label = "BM_P";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
+        };
+
+        BM_B: BM_B {
+            compatible = "zmk,behavior-macro";
+            label = "BM_B";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT &kp LEFT>;
         };
     };
 
