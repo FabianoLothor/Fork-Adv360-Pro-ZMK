@@ -156,6 +156,11 @@
             bindings = <&bl BL_TOG>;
             key-positions = <67 68>;
         };
+
+        C_SQ {
+            bindings = <&BM_DQ>;
+            key-positions = <33 40>;
+        };
     };
 
     macros {
