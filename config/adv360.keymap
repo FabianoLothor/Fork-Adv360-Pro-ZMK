@@ -241,21 +241,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        L00_CUSTOM {
+        L00_ACTIONS {
             bindings = <
-&kp ESC    &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &none                                                    &none      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W      &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp CAPS   &kp A      &kp S      &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X      &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 7      &kp GRAVE  &kp EQUAL  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 7
+&rgb_ug RGB_MEFS_CMD 5  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                              &kp F7  &kp F8        &kp F9        &kp F10       &kp F11       &kp F12       &rgb_ug RGB_MEFS_CMD 5
+&none                   &none         &none         &none         &none         &none         &none                                               &none   &none         &none         &none         &none         &none         &none
+&none                   &none         &none         &none         &none         &none         &none   &none  &none            &none        &none  &none   &none         &none         &none         &none         &none         &none
+&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none                   &none         &none         &none         &none                       &none   &none  &bootloader      &bootloader  &none  &none                 &none         &none         &none         &none         &none
             >;
         };
 
         L01_QWERTY {
             bindings = <
-&none  &none             &none                 &none               &none              &none          &none                                           &none      &none          &none              &none               &none                  &none                &none
-&none  &kp Q             &kp W                 &kp E               &kp R              &kp T          &none                                           &none      &kp Y          &kp U              &kp I               &kp O                  &kp P                &none
-&none  &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT S  &BHT_KP_L LSHIFT D  &BHT_KP_L LCTRL F  &BHT_MO_L 7 G  &none     &none    &none      &none  &none      &none      &BHT_MO_R 7 H  &BHT_KP_R RCTRL J  &BHT_KP_R RSHIFT K  &BHT_KP_R RIGHT_ALT L  &BHT_KP_R RWIN SEMI  &none
+&kp ESC  &none             &none                 &none               &none              &none          &none                                           &none      &none          &none              &none               &none                  &none                &none
+&kp TAB  &kp Q             &kp W                 &kp E               &kp R              &kp T          &none                                           &none      &kp Y          &kp U              &kp I               &kp O                  &kp P                &none
+&none  &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT S  &BHT_KP_L LSHIFT D  &BHT_KP_L LCTRL F  &BHT_MO_L 6 G  &none     &none    &none      &none  &none      &none      &BHT_MO_R 6 H  &BHT_KP_R RCTRL J  &BHT_KP_R RSHIFT K  &BHT_KP_R RIGHT_ALT L  &BHT_KP_R RWIN SEMI  &none
 &none  &kp Z             &kp X                 &kp C               &kp V              &kp B                             &none      &none                        &kp N          &kp M              &kp COMMA           &kp DOT                &kp FSLH             &none
 &none  &none             &none                 &none               &none                             &kp BSPC  &kp DEL  &none      &none  &kp ENTER  &kp SPACE                 &none              &none               &none                  &none                &none
             >;
@@ -263,9 +263,9 @@
 
         L02_COLEMAK-DHM {
             bindings = <
-&none  &none             &none                 &none               &none              &none          &none                                           &none      &none          &none              &none               &none                  &none             &none
-&none  &kp Q             &kp W                 &kp F               &kp P              &kp B          &none                                           &none      &kp J          &kp L              &kp U               &kp Y                  &kp SEMI          &none
-&none  &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT R  &BHT_KP_L LSHIFT S  &BHT_KP_L LCTRL T  &BHT_MO_L 7 G  &none     &none    &none      &none  &none      &none      &BHT_MO_R 7 M  &BHT_KP_R RCTRL N  &BHT_KP_R RSHIFT E  &BHT_KP_R RIGHT_ALT I  &BHT_KP_R RWIN O  &none
+&kp ESC  &none             &none                 &none               &none              &none          &none                                           &none      &none          &none              &none               &none                  &none             &none
+&kp TAB  &kp Q             &kp W                 &kp F               &kp P              &kp B          &none                                           &none      &kp J          &kp L              &kp U               &kp Y                  &kp SEMI          &none
+&none  &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT R  &BHT_KP_L LSHIFT S  &BHT_KP_L LCTRL T  &BHT_MO_L 6 G  &none     &none    &none      &none  &none      &none      &BHT_MO_R 6 M  &BHT_KP_R RCTRL N  &BHT_KP_R RSHIFT E  &BHT_KP_R RIGHT_ALT I  &BHT_KP_R RWIN O  &none
 &none  &kp Z             &kp X                 &kp C               &kp D              &kp V                             &none      &none                        &kp K          &kp H              &kp COMMA           &kp DOT                &kp FSLH          &none
 &none  &none             &none                 &none               &none                             &kp BSPC  &kp DEL  &none      &none  &kp ENTER  &kp SPACE                 &none              &none               &none                  &none             &none
             >;
@@ -273,9 +273,9 @@
 
         L03_DVORAK {
             bindings = <
-&none  &none             &none                 &none               &none              &none          &none                                           &none      &none          &none              &none               &none                  &none             &none
-&none  &kp APOS          &kp COMMA             &kp DOT             &kp P              &kp Y          &none                                           &none      &kp F          &kp G              &kp C               &kp R                  &kp L             &none
-&none  &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT O  &BHT_KP_L LSHIFT E  &BHT_KP_L LCTRL U  &BHT_MO_L 7 I  &none     &none    &none      &none  &none      &none      &BHT_MO_R 7 D  &BHT_KP_R RCTRL H  &BHT_KP_R RSHIFT T  &BHT_KP_R RIGHT_ALT N  &BHT_KP_R RWIN S  &none
+&kp ESC  &none             &none                 &none               &none              &none          &none                                           &none      &none          &none              &none               &none                  &none             &none
+&kp TAB  &kp APOS          &kp COMMA             &kp DOT             &kp P              &kp Y          &none                                           &none      &kp F          &kp G              &kp C               &kp R                  &kp L             &none
+&none  &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT O  &BHT_KP_L LSHIFT E  &BHT_KP_L LCTRL U  &BHT_MO_L 6 I  &none     &none    &none      &none  &none      &none      &BHT_MO_R 6 D  &BHT_KP_R RCTRL H  &BHT_KP_R RSHIFT T  &BHT_KP_R RIGHT_ALT N  &BHT_KP_R RWIN S  &none
 &none  &kp SEMI          &kp Q                 &kp J               &kp K              &kp X                             &none      &none                        &kp B          &kp M              &kp W               &kp V                  &kp Z             &none
 &none  &none             &none                 &none               &none                             &kp BSPC  &kp DEL  &none      &none  &kp ENTER  &kp SPACE                 &none              &none               &none                  &none             &none
             >;
@@ -304,20 +304,10 @@
         L06_SYMBOLS {
             bindings = <
 &none  &none   &none   &none   &none   &none   &none                                  &none  &none   &none   &none   &none   &none   &none
-&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &none                                  &none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-&none  &none   &none   &none   &none   &none   &none  &none  &none      &none  &none  &none  &none   &none   &none   &none   &none   &none
+&none  &none   &none   &none   &none   &none   &none                                  &none  &none   &none   &none   &none   &none   &none
+&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &none  &none  &none      &none  &none  &none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
 &none  &none   &none   &none   &none   &none                 &none      &none                &none   &none   &none   &none   &none   &none
 &none  &none   &none   &none   &none           &none  &none  &none      &none  &none  &none          &none   &none   &none   &none   &none
-            >;
-        };
-
-        L07_ACTIONS {
-            bindings = <
-&rgb_ug RGB_MEFS_CMD 5  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                              &kp F7  &kp F8        &kp F9        &kp F10       &kp F11       &kp F12       &rgb_ug RGB_MEFS_CMD 5
-&none                   &none         &none         &none         &none         &none         &none                                               &none   &none         &none         &none         &none         &none         &none
-&none                   &none         &none         &none         &none         &none         &none   &none  &none            &none        &none  &none   &none         &none         &none         &none         &none         &none
-&none                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                 &none            &none                       &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
-&none                   &none         &none         &none         &none                       &none   &none  &bootloader      &bootloader  &none  &none                 &none         &none         &none         &none         &none
             >;
         };
     };
