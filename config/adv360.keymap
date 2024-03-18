@@ -66,73 +66,73 @@
 
         C_L00_TO_L05 {
             bindings = <&to 5>;
-            key-positions = <66 69>;
+            key-positions = <68 67>;
             layers = <0>;
         };
 
         C_L00_TO_L01 {
             bindings = <&to 1>;
-            key-positions = <65 70>;
+            key-positions = <52 53>;
             layers = <0>;
         };
 
         C_L01_TO_L00 {
             bindings = <&to 0>;
-            key-positions = <66 69>;
+            key-positions = <67 68>;
             layers = <1>;
         };
 
         C_L01_TO_L02 {
             bindings = <&to 2>;
-            key-positions = <65 70>;
+            key-positions = <52 53>;
             layers = <1>;
         };
 
         C_L02_TO_L01 {
             bindings = <&to 1>;
-            key-positions = <66 69>;
+            key-positions = <67 68>;
             layers = <2>;
         };
 
         C_L02_TO_L03 {
             bindings = <&to 3>;
-            key-positions = <65 70>;
+            key-positions = <53 52>;
             layers = <2>;
         };
 
         C_L03_TO_L02 {
             bindings = <&to 2>;
-            key-positions = <66 69>;
+            key-positions = <67 68>;
             layers = <3>;
         };
 
         C_L03_TO_L04 {
             bindings = <&to 4>;
-            key-positions = <65 70>;
+            key-positions = <52 53>;
             layers = <3>;
         };
 
         C_L04_TO_L03 {
             bindings = <&to 3>;
-            key-positions = <66 69>;
+            key-positions = <67 68>;
             layers = <4>;
         };
 
         C_L04_TO_L05 {
             bindings = <&to 5>;
-            key-positions = <65 70>;
+            key-positions = <53 52>;
             layers = <4>;
         };
 
         C_L05_TO_L00 {
             bindings = <&to 0>;
-            key-positions = <65 70>;
+            key-positions = <52 53>;
             layers = <5>;
         };
 
         C_L05_TO_L04 {
             bindings = <&to 4>;
-            key-positions = <66 69>;
+            key-positions = <68 67>;
             layers = <5>;
         };
 
@@ -154,12 +154,12 @@
 
         C_TOGGLE_LEDS {
             bindings = <&bl BL_TOG>;
-            key-positions = <67 68>;
+            key-positions = <65 66 70 69>;
         };
 
         C_DQ {
             bindings = <&BM_DQ>;
-            key-positions = <34 39>;
+            key-positions = <32 41 40 33>;
             layers = <1 2 3 4 5>;
         };
 
