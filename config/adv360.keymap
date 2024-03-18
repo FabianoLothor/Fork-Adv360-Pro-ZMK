@@ -195,6 +195,16 @@
     };
 
     macros {
+        #include "version.dtsi"
+        #ifndef VERSION_MACRO
+        macro_ver: macro_ver {
+            compatible = "zmk,behavior-macro";
+            label = "macro_version";
+            #binding-cells = <0>;
+            bindings = <&kp RET>;
+        };
+        #endif
+
         BM_SQ: BM_SQ {
             compatible = "zmk,behavior-macro";
             label = "BM_SQ";
