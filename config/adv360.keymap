@@ -303,21 +303,11 @@
 
         L06_SYMBOLS {
             bindings = <
-&none  &none          &none         &none            &none          &none         &none                                  &none  &none   &none   &none   &none   &none   &none
-&none  &kp AT         &kp HASH      &kp DOLLAR       &kp PERCENT    &kp KP_EQUAL  &none                                  &none  &none   &none   &none   &none   &none   &none
-&none  &kp BACKSLASH  &kp KP_SLASH  &kp EXCLAMATION  &kp PIPE       &kp AMPS      &none  &none  &none      &none  &none  &none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-&none  &kp BACKSLASH  &kp KP_DOT    &kp KP_MINUS     &kp UNDER      &kp SEMI                    &none      &none                &none   &none   &none   &none   &none   &none
-&none  &kp KP_DOT     &kp KP_COMMA  &kp COLON        &kp SEMICOLON                &none  &none  &none      &none  &none  &none          &none   &none   &none   &none   &none
-            >;
-        };
-
-        L07_MATH {
-            bindings = <
-&none  &none  &kp K_CALC       &kp KP_SLASH     &kp KP_ASTERISK  &kp KP_EQUAL  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERCENT                 &none      &none                &none  &none  &none  &none  &none  &none
-&none  &none  &kp KP_COMMA     &kp KP_NUMBER_0  &kp KP_DOT                     &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                 &none  &none  &kp K_CALC       &kp KP_SLASH     &kp KP_ASTERISK  &kp KP_EQUAL  &none
+&none  &none  &none  &none  &none  &none  &none                                 &none  &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none &none  &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &none
+&none  &none  &none  &none  &none  &none                &none      &none               &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERCENT &none        
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none &none         &kp KP_COMMA     &kp KP_NUMBER_0  &kp KP_DOT        &none       &none
             >;
         };
     };
