@@ -267,8 +267,8 @@
             bindings = <
 &kp ESC    &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3        &kp NUMBER_4       &kp NUMBER_5   &kp GRAVE                                                     &kp APOS       &kp N6         &kp N7             &kp N8              &kp N9                &kp N0               &kp ESC
 &kp TAB    &kp Q             &kp W                 &kp E               &kp R              &kp T          &kp LC(X)                                                     &kp RC(P)      &kp Y          &kp U              &kp I               &kp O                 &kp P                &kp TAB
-&kp CAPS   &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT S  &BHT_KP_L LCTRL D  &BHT_KP_L LSHIFT F  &BHT_MO_L 6 G  &kp LC(C)  &kp LC(Z)  &none         &none          &kp RC(Y)  &kp RC(RS(P))  &BHT_MO_R 6 H  &BHT_KP_R RSHIFT J  &BHT_KP_R RCTRL K  &BHT_KP_R LEFT_ALT L  &BHT_KP_R RWIN SEMI  &kp CAPS
-&kp LSHFT  &kp Z             &kp X                 &kp C               &kp V              &kp B                                &kp HOME      &kp PAGE_UP                              &kp N          &kp M              &kp COMMA           &kp DOT               &kp FSLH             &kp RSHFT
+&kp CAPS   &BHT_KP_L LWIN A  &BHT_KP_L LALT S  &BHT_KP_L LCTRL D  &BHT_KP_L LSHIFT F  &BHT_MO_L 6 G  &kp LC(C)  &kp LC(Z)  &none         &none          &kp RC(Y)  &kp RC(RS(P))  &BHT_MO_R 6 H  &BHT_KP_R RSHIFT J  &BHT_KP_R RCTRL K  &BHT_KP_R LALT L  &BHT_KP_R RWIN SEMI  &kp CAPS
+&kp LSHFT  &kp Z             &kp X                 &kp C               &BHT_KP_R RALT V              &kp B                                &kp HOME      &kp PAGE_UP                              &kp N          &BHT_KP_R RALT M              &kp COMMA           &kp DOT               &kp FSLH             &kp RSHFT
 &mo 0      &none             &none                 &none               &none                             &kp BSPC   &kp DEL    &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                     &none              &none               &none                 &none                &mo 0
             >;
         };
@@ -277,8 +277,8 @@
             bindings = <
 &kp ESC    &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3        &kp NUMBER_4       &kp NUMBER_5   &kp GRAVE                                                     &kp APOS          &kp N6         &kp N7             &kp N8              &kp N9                &kp N0            &kp ESC
 &kp TAB    &kp Q             &kp W                 &kp F               &kp P              &kp B          &kp LC(X)                                                     &kp RC(P)      &kp J          &kp L              &kp U               &kp Y                 &kp SEMI          &kp TAB
-&kp CAPS   &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT R  &BHT_KP_L LCTRL S  &BHT_KP_L LSHIFT T  &BHT_MO_L 6 G  &kp LC(C)  &kp LC(Z)  &none         &none          &kp RC(Y)  &kp RC(RS(P))  &BHT_MO_R 6 M  &BHT_KP_R RSHIFT N  &BHT_KP_R RCTRL E  &BHT_KP_R LEFT_ALT I  &BHT_KP_R RWIN O  &kp CAPS
-&kp LSHFT  &kp Z             &kp X                 &kp C               &kp D              &kp V                                &kp HOME      &kp PAGE_UP                              &kp K          &kp H              &kp COMMA           &kp DOT               &kp FSLH          &kp RSHFT
+&kp CAPS   &BHT_KP_L LWIN A  &BHT_KP_L LALT R  &BHT_KP_L LCTRL S  &BHT_KP_L LSHIFT T  &BHT_MO_L 6 G  &kp LC(C)  &kp LC(Z)  &none         &none          &kp RC(Y)  &kp RC(RS(P))  &BHT_MO_R 6 M  &BHT_KP_R RSHIFT N  &BHT_KP_R RCTRL E  &BHT_KP_R LALT I  &BHT_KP_R RWIN O  &kp CAPS
+&kp LSHFT  &kp Z             &kp X                 &kp C               &BHT_KP_R RALT D              &kp V                                &kp HOME      &kp PAGE_UP                              &kp K          &BHT_KP_R RALT H              &kp COMMA           &kp DOT               &kp FSLH          &kp RSHFT
 &mo 0      &none             &none                 &none               &none                             &kp BSPC   &kp DEL    &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                     &none              &none               &none                 &none             &mo 0
             >;
         };
@@ -287,8 +287,8 @@
             bindings = <
 &kp ESC    &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3        &kp NUMBER_4       &kp NUMBER_5   &kp GRAVE                                                     &kp APOS          &kp N6         &kp N7             &kp N8              &kp N9                &kp N0            &kp ESC
 &kp TAB    &kp APOS          &kp COMMA             &kp DOT             &kp P              &kp Y          &kp LC(X)                                                     &kp RC(P)      &kp F          &kp G              &kp C               &kp R                 &kp L             &kp TAB
-&kp CAPS   &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT O  &BHT_KP_L LCTRL E  &BHT_KP_L LSHIFT U  &BHT_MO_L 6 I  &kp LC(C)  &kp LC(Z)  &none         &none          &kp RC(Y)  &kp RC(RS(P))  &BHT_MO_R 6 D  &BHT_KP_R RSHIFT H  &BHT_KP_R RCTRL T  &BHT_KP_R LEFT_ALT N  &BHT_KP_R RWIN S  &kp CAPS
-&kp LSHFT  &kp SEMI          &kp Q                 &kp J               &kp K              &kp X                                &kp HOME      &kp PAGE_UP                              &kp B          &kp M              &kp W               &kp V                 &kp Z             &kp RSHFT
+&kp CAPS   &BHT_KP_L LWIN A  &BHT_KP_L LALT O  &BHT_KP_L LCTRL E  &BHT_KP_L LSHIFT U  &BHT_MO_L 6 I  &kp LC(C)  &kp LC(Z)  &none         &none          &kp RC(Y)  &kp RC(RS(P))  &BHT_MO_R 6 D  &BHT_KP_R RSHIFT H  &BHT_KP_R RCTRL T  &BHT_KP_R LALT N  &BHT_KP_R RWIN S  &kp CAPS
+&kp LSHFT  &kp SEMI          &kp Q                 &kp J               &BHT_KP_R RALT K              &kp X                                &kp HOME      &kp PAGE_UP                              &kp B          &BHT_KP_R RALT M              &kp W               &kp V                 &kp Z             &kp RSHFT
 &mo 0      &none             &none                 &none               &none                             &kp BSPC   &kp DEL    &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                     &none              &none               &none                 &none             &mo 0
             >;
         };
