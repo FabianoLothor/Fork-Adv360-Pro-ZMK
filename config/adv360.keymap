@@ -265,7 +265,7 @@
 
         L01_QWERTY {
             bindings = <
-&kp ESC    &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3        &kp NUMBER_4       &kp NUMBER_5   &none                                                         &none          &kp N6         &kp N7             &kp N8              &kp N9                &kp N0               &kp ESC
+&kp ESC    &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3        &kp NUMBER_4       &kp NUMBER_5   &kp GRAVE                                                     &kp APOS       &kp N6         &kp N7             &kp N8              &kp N9                &kp N0               &kp ESC
 &kp TAB    &kp Q             &kp W                 &kp E               &kp R              &kp T          &kp LC(X)                                                     &kp RC(P)      &kp Y          &kp U              &kp I               &kp O                 &kp P                &kp TAB
 &kp CAPS   &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT S  &BHT_KP_L LSHIFT D  &BHT_KP_L LCTRL F  &BHT_MO_L 6 G  &kp LC(C)  &kp LC(Z)  &none         &none          &kp RC(Y)  &kp RC(RS(P))  &BHT_MO_R 6 H  &BHT_KP_R RCTRL J  &BHT_KP_R RSHIFT K  &BHT_KP_R LEFT_ALT L  &BHT_KP_R RWIN SEMI  &kp CAPS
 &kp LSHFT  &kp Z             &kp X                 &kp C               &kp V              &kp B                                &kp HOME      &kp PAGE_UP                              &kp N          &kp M              &kp COMMA           &kp DOT               &kp FSLH             &kp RSHFT
