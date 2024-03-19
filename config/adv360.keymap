@@ -275,7 +275,7 @@
 
         L02_COLEMAK-DHM {
             bindings = <
-&kp ESC    &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3        &kp NUMBER_4       &kp NUMBER_5   &none                                                         &none          &kp N6         &kp N7             &kp N8              &kp N9                &kp N0            &kp ESC
+&kp ESC    &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3        &kp NUMBER_4       &kp NUMBER_5   &kp GRAVE                                                     &kp APOS          &kp N6         &kp N7             &kp N8              &kp N9                &kp N0            &kp ESC
 &kp TAB    &kp Q             &kp W                 &kp F               &kp P              &kp B          &kp LC(X)                                                     &kp RC(P)      &kp J          &kp L              &kp U               &kp Y                 &kp SEMI          &kp TAB
 &kp CAPS   &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT R  &BHT_KP_L LSHIFT S  &BHT_KP_L LCTRL T  &BHT_MO_L 6 G  &kp LC(C)  &kp LC(Z)  &none         &none          &kp RC(Y)  &kp RC(RS(P))  &BHT_MO_R 6 M  &BHT_KP_R RCTRL N  &BHT_KP_R RSHIFT E  &BHT_KP_R LEFT_ALT I  &BHT_KP_R RWIN O  &kp CAPS
 &kp LSHFT  &kp Z             &kp X                 &kp C               &kp D              &kp V                                &kp HOME      &kp PAGE_UP                              &kp K          &kp H              &kp COMMA           &kp DOT               &kp FSLH          &kp RSHFT
@@ -285,7 +285,7 @@
 
         L03_DVORAK {
             bindings = <
-&kp ESC    &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3        &kp NUMBER_4       &kp NUMBER_5   &none                                                         &none          &kp N6         &kp N7             &kp N8              &kp N9                &kp N0            &kp ESC
+&kp ESC    &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3        &kp NUMBER_4       &kp NUMBER_5   &kp GRAVE                                                     &kp APOS          &kp N6         &kp N7             &kp N8              &kp N9                &kp N0            &kp ESC
 &kp TAB    &kp APOS          &kp COMMA             &kp DOT             &kp P              &kp Y          &kp LC(X)                                                     &kp RC(P)      &kp F          &kp G              &kp C               &kp R                 &kp L             &kp TAB
 &kp CAPS   &BHT_KP_L LWIN A  &BHT_KP_L LEFT_ALT O  &BHT_KP_L LSHIFT E  &BHT_KP_L LCTRL U  &BHT_MO_L 6 I  &kp LC(C)  &kp LC(Z)  &none         &none          &kp RC(Y)  &kp RC(RS(P))  &BHT_MO_R 6 D  &BHT_KP_R RCTRL H  &BHT_KP_R RSHIFT T  &BHT_KP_R LEFT_ALT N  &BHT_KP_R RWIN S  &kp CAPS
 &kp LSHFT  &kp SEMI          &kp Q                 &kp J               &kp K              &kp X                                &kp HOME      &kp PAGE_UP                              &kp B          &kp M              &kp W               &kp V                 &kp Z             &kp RSHFT
