@@ -13,9 +13,9 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <400>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <500>;
+            require-prior-idle-ms = <250>;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
             hold-trigger-on-release;
         };
@@ -27,9 +27,9 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <400>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <500>;
+            require-prior-idle-ms = <250>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
         };
@@ -39,9 +39,9 @@
             label = "BHT_MO_R";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <400>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <500>;
+            require-prior-idle-ms = <250>;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
             hold-trigger-on-release;
             bindings = <&mo>, <&kp>;
@@ -52,9 +52,9 @@
             label = "BHT_MO_L";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <400>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <500>;
+            require-prior-idle-ms = <250>;
             hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
             hold-trigger-on-release;
             bindings = <&mo>, <&kp>;
@@ -68,129 +68,151 @@
             bindings = <&to 5>;
             key-positions = <68 67>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         C_L00_TO_L01 {
             bindings = <&to 1>;
             key-positions = <52 53>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         C_L01_TO_L00 {
             bindings = <&to 0>;
             key-positions = <67 68>;
             layers = <1>;
+            require-prior-idle-ms = <100>;
         };
 
         C_L01_TO_L02 {
             bindings = <&to 2>;
             key-positions = <52 53>;
             layers = <1>;
+            require-prior-idle-ms = <100>;
         };
 
         C_L02_TO_L01 {
             bindings = <&to 1>;
             key-positions = <67 68>;
             layers = <2>;
+            require-prior-idle-ms = <100>;
         };
 
         C_L02_TO_L03 {
             bindings = <&to 3>;
             key-positions = <53 52>;
             layers = <2>;
+            require-prior-idle-ms = <100>;
         };
 
         C_L03_TO_L02 {
             bindings = <&to 2>;
             key-positions = <67 68>;
             layers = <3>;
+            require-prior-idle-ms = <100>;
         };
 
         C_L03_TO_L04 {
             bindings = <&to 4>;
             key-positions = <52 53>;
             layers = <3>;
+            require-prior-idle-ms = <100>;
         };
 
         C_L04_TO_L03 {
             bindings = <&to 3>;
             key-positions = <67 68>;
             layers = <4>;
+            require-prior-idle-ms = <100>;
         };
 
         C_L04_TO_L05 {
             bindings = <&to 5>;
             key-positions = <53 52>;
             layers = <4>;
+            require-prior-idle-ms = <100>;
         };
 
         C_L05_TO_L00 {
             bindings = <&to 0>;
             key-positions = <52 53>;
             layers = <5>;
+            require-prior-idle-ms = <100>;
         };
 
         C_L05_TO_L04 {
             bindings = <&to 4>;
             key-positions = <68 67>;
             layers = <5>;
+            require-prior-idle-ms = <100>;
         };
 
         C_BT_NEXT {
             bindings = <&bt BT_NXT>;
             key-positions = <35 38>;
+            require-prior-idle-ms = <100>;
         };
 
         C_BT_PREV {
             bindings = <&bt BT_PRV>;
             key-positions = <36 37>;
+            require-prior-idle-ms = <100>;
         };
 
         C_BT_CLEAR {
             bindings = <&bt BT_CLR>;
             key-positions = <35 36 37 38>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         C_TOGGLE_LEDS {
             bindings = <&bl BL_TOG>;
             key-positions = <65 66 70 69>;
+            require-prior-idle-ms = <100>;
         };
 
         C_DQ {
             bindings = <&BM_DQ>;
             key-positions = <32 41 40 33>;
             layers = <1 2 3 4 5>;
+            require-prior-idle-ms = <100>;
         };
 
         C_SQ {
             bindings = <&BM_SQ>;
             key-positions = <33 40>;
             layers = <1 2 3 4 5>;
+            require-prior-idle-ms = <100>;
         };
 
         C_RB {
             bindings = <&BM_RB>;
             key-positions = <32 41>;
             layers = <1 2 3 4 5>;
+            require-prior-idle-ms = <100>;
         };
 
         C_SB {
             bindings = <&BM_SB>;
             key-positions = <31 42>;
             layers = <1 2 3 4 5>;
+            require-prior-idle-ms = <100>;
         };
 
         C_CB {
             bindings = <&BM_CB>;
             key-positions = <30 43>;
             layers = <1 2 3 4 5>;
+            require-prior-idle-ms = <100>;
         };
 
         C_AB {
             bindings = <&BM_AB>;
             key-positions = <29 44>;
             layers = <1 2 3 4 5>;
+            require-prior-idle-ms = <100>;
         };
     };
 
