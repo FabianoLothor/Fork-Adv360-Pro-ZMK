@@ -1,0 +1,41 @@
+C_DQ {
+    bindings = <&BM_DQ>;
+    key-positions = <32 41 40 33>;
+    layers = <1 2 3 4 5>;
+    require-prior-idle-ms = <100>;
+};
+
+C_SQ {
+    bindings = <&BM_SQ>;
+    key-positions = <33 40>;
+    layers = <1 2 3 4 5>;
+    require-prior-idle-ms = <100>;
+};
+
+C_RB {
+    bindings = <&BM_RB>;
+    key-positions = <32 41>;
+    layers = <1 2 3 4 5>;
+    require-prior-idle-ms = <100>;
+};
+
+C_SB {
+    bindings = <&BM_SB>;
+    key-positions = <31 42>;
+    layers = <1 2 3 4 5>;
+    require-prior-idle-ms = <100>;
+};
+
+C_CB {
+    bindings = <&BM_CB>;
+    key-positions = <30 43>;
+    layers = <1 2 3 4 5>;
+    require-prior-idle-ms = <100>;
+};
+
+C_AB {
+    bindings = <&BM_AB>;
+    key-positions = <29 44>;
+    layers = <1 2 3 4 5>;
+    require-prior-idle-ms = <100>;
+};

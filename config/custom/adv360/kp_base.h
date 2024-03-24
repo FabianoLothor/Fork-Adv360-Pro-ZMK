@@ -33,7 +33,7 @@
 /*
                                             SPECIAL MAPPING
 ╭──────────────────────────────────────────────────┬──────────────────────────────────────────────────╮
-│ L_CAPS L_R1C2 L_R1C3 L_R1C4 L_R1C5 L_R1C6 L_R1C7 │ R_R1C7 R_R1C6 R_R1C5 R_R1C4 R_R1C3 R_R1C2 R_CAPS │
+│ L_CLCK L_R1C2 L_R1C3 L_R1C4 L_R1C5 L_R1C6 L_R1C7 │ R_R1C7 R_R1C6 R_R1C5 R_R1C4 R_R1C3 R_R1C2 R_CLCK │
 │ LK_TAB L_R2C2 L_R2C3 L_R2C4 L_R2C5 L_R2C6 L_R2C7 │ R_R2C7 R_R2C6 R_R2C5 R_R2C4 R_R2C3 R_R2C2 RK_TAB │
 │ LK_ESC L_R3C2 L_R3C3 L_R3C4 L_R3C5 L_R3C6 L_R3C7 │ R_R3C7 R_R3C6 R_R3C5 R_R3C4 R_R3C3 R_R3C2 RK_ESC │
 │ LSHIFT L_R4C2 L_R4C3 L_R4C4 L_R4C5 L_R4C6 ╭──────┴──────╮ R_R4C6 R_R4C5 R_R4C4 R_R4C3 R_R4C2 RSHIFT │
@@ -41,13 +41,13 @@
 ╰──────────────────────────────────┬─┴─────────────┬─────────────┴─┬──────────────────────────────────╯
                             ╭──────╯ L_CTRL LK_ALT │ RK_ALT R_CTRL ╰──────╮
                             │ L_BSPC LK_DEL L_HOME │ R_PGUP RENTER RK_SPC │
-                            ╰─────────────╮ LK_END │ R_PGDW ╭─────────────╯
+                            ╰─────────────╮ LK_END │ R_PGDN ╭─────────────╯
                                           ╰────────┴────────╯
 */
 
 // > LEFT SPECIAL KEYS
 
-#define L_CAPS 0
+#define L_CLCK 0
 #define LK_TAB 14
 #define LK_ESC 28
 #define LSHIFT 42
@@ -64,7 +64,7 @@
 
 // > RIGHT SPECIAL KEYS
 
-#define R_CAPS 13
+#define R_CLCK 13
 #define RK_TAB 27
 #define RK_ESC 41
 #define RSHIFT 53
@@ -77,7 +77,7 @@
 #define RK_SPC 73
 
 #define R_PGUP 71
-#define R_PGDW 75
+#define R_PGDN 75
 
 // > LEFT ROW 1
 

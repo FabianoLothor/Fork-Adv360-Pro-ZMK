@@ -18,7 +18,7 @@
 /*
                                           BASE LAYOUT MAPPING
 ╭──────────────────────────────────────────────────┬──────────────────────────────────────────────────╮
-│ L_CAPS L_QY_1 L_QY_2 L_QY_3 L_QY_4 L_QY_5 L_R1C7 │ R_R1C7 L_QY_6 L_QY_7 L_QY_8 L_QY_9 L_QY_0 R_CAPS │
+│ L_CLCK L_QY_1 L_QY_2 L_QY_3 L_QY_4 L_QY_5 L_R1C7 │ R_R1C7 L_QY_6 L_QY_7 L_QY_8 L_QY_9 L_QY_0 R_CLCK │
 │ LK_TAB L_QY_Q L_QY_W L_QY_E L_QY_R L_QY_T L_R2C7 │ R_R2C7 L_QY_Y L_QY_U L_QY_I L_QY_O L_QY_P RK_TAB │
 │ LK_ESC L_QY_A L_QY_S L_QY_D L_QY_F L_QY_G L_R3C7 │ R_R3C7 L_QY_H L_QY_J L_QY_K L_QY_L L_QYSC RK_ESC │
 │ LSHIFT L_QY_Z L_QY_X L_QY_C L_QY_V L_QY_B ╭──────┴──────╮ L_QY_N L_QY_M L_QYCO L_QYDO L_QYSL RSHIFT │
@@ -26,7 +26,7 @@
 ╰──────────────────────────────────┬─┴─────────────┬─────────────┴─┬──────────────────────────────────╯
                             ╭──────╯ L_CTRL LK_ALT │ RK_ALT R_CTRL ╰──────╮
                             │ L_BSPC LK_DEL L_HOME │ R_PGUP RENTER RK_SPC │
-                            ╰─────────────╮ LK_END │ R_PGDW ╭─────────────╯
+                            ╰─────────────╮ LK_END │ R_PGDN ╭─────────────╯
                                           ╰────────┴────────╯
 */
 

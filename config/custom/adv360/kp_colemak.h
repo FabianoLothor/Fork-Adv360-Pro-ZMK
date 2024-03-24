@@ -18,7 +18,7 @@
 /*
                                           BASE LAYOUT MAPPING
 ╭──────────────────────────────────────────────────┬──────────────────────────────────────────────────╮
-│ L_CAPS L_CK_1 L_CK_2 L_CK_3 L_CK_4 L_CK_5 L_R1C7 │ R_R1C7 L_CK_6 L_CK_7 L_CK_8 L_CK_9 L_CK_0 R_CAPS │
+│ L_CLCK L_CK_1 L_CK_2 L_CK_3 L_CK_4 L_CK_5 L_R1C7 │ R_R1C7 L_CK_6 L_CK_7 L_CK_8 L_CK_9 L_CK_0 R_CLCK │
 │ LK_TAB L_CK_Q L_CK_W L_CK_F L_CK_P L_CK_B L_R2C7 │ R_R2C7 L_CK_J L_CK_L L_CK_U L_CK_Y L_CKSC RK_TAB │
 │ LK_ESC L_CK_A L_CK_R L_CK_S L_CK_T L_CK_G L_R3C7 │ R_R3C7 L_CK_M L_CK_N L_CK_E L_CK_I L_CK_O RK_ESC │
 │ LSHIFT L_CK_Z L_CK_X L_CK_C L_CK_D L_CK_V ╭──────┴──────╮ L_CK_K L_CK_H L_CKCO L_CKDO L_CKSL RSHIFT │
@@ -26,7 +26,7 @@
 ╰──────────────────────────────────┬─┴─────────────┬─────────────┴─┬──────────────────────────────────╯
                             ╭──────╯ L_CTRL LK_ALT │ RK_ALT R_CTRL ╰──────╮
                             │ L_BSPC LK_DEL L_HOME │ R_PGUP RENTER RK_SPC │
-                            ╰─────────────╮ LK_END │ R_PGDW ╭─────────────╯
+                            ╰─────────────╮ LK_END │ R_PGDN ╭─────────────╯
                                           ╰────────┴────────╯
 */
 

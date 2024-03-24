@@ -4,6 +4,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#include "custom/adv360/vars.h"
+
 #include "custom/adv360/kp_base.h"
 #include "custom/adv360/kp_colemak.h"
 #include "custom/adv360/kp_dvorak.h"
@@ -177,48 +179,6 @@
             key-positions = <65 66 70 69>;
             require-prior-idle-ms = <100>;
         };
-
-        C_DQ {
-            bindings = <&BM_DQ>;
-            key-positions = <32 41 40 33>;
-            layers = <1 2 3 4 5>;
-            require-prior-idle-ms = <100>;
-        };
-
-        C_SQ {
-            bindings = <&BM_SQ>;
-            key-positions = <33 40>;
-            layers = <1 2 3 4 5>;
-            require-prior-idle-ms = <100>;
-        };
-
-        C_RB {
-            bindings = <&BM_RB>;
-            key-positions = <32 41>;
-            layers = <1 2 3 4 5>;
-            require-prior-idle-ms = <100>;
-        };
-
-        C_SB {
-            bindings = <&BM_SB>;
-            key-positions = <31 42>;
-            layers = <1 2 3 4 5>;
-            require-prior-idle-ms = <100>;
-        };
-
-        C_CB {
-            bindings = <&BM_CB>;
-            key-positions = <30 43>;
-            layers = <1 2 3 4 5>;
-            require-prior-idle-ms = <100>;
-        };
-
-        C_AB {
-            bindings = <&BM_AB>;
-            key-positions = <29 44>;
-            layers = <1 2 3 4 5>;
-            require-prior-idle-ms = <100>;
-        };
     };
 
     macros {
@@ -280,90 +240,11 @@
     keymap {
         compatible = "zmk,keymap";
 
-        L00_ACTIONS {
-            bindings = <
-&none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F11                                                 &kp F12                 &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none  &none   &none   &none   &none   &none   &rgb_ug RGB_MEFS_CMD 5                                  &rgb_ug RGB_MEFS_CMD 5  &none   &none   &none   &none   &none    &none
-&none  &none   &none   &none   &none   &none   &bootloader             &none  &none      &none  &none  &bootloader             &none   &none   &none   &none   &none    &none
-&none  &none   &none   &none   &none   &none                                  &none      &none                                 &none   &none   &none   &none   &none    &none
-&none  &none   &none   &none   &none           &none                   &none  &none      &none  &none  &none                           &none   &none   &none   &none    &none
-            >;
-        };
-
-        L01_QWERTY {
-            bindings = <
-&kp ESC    &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4        &kp NUMBER_5   &kp GRAVE                                                     &kp APOS       &kp N6         &kp N7              &kp N8             &kp N9            &kp N0               &kp ESC
-&kp TAB    &kp Q             &kp W             &kp E              &kp R               &kp T          &kp LC(X)                                                     &kp RC(V)      &kp Y          &kp U               &kp I              &kp O             &kp P                &kp TAB
-&kp CAPS   &BHT_KP_L LWIN A  &BHT_KP_L LALT S  &BHT_KP_L LCTRL D  &BHT_KP_L LSHIFT F  &BHT_MO_L 6 G  &kp LC(C)  &kp LC(Z)  &none         &none          &kp RC(Y)  &kp RC(RS(V))  &BHT_MO_R 6 H  &BHT_KP_R RSHIFT J  &BHT_KP_R RCTRL K  &BHT_KP_R LALT L  &BHT_KP_R RWIN SEMI  &kp CAPS
-&kp LSHFT  &kp Z             &kp X             &BHT_KP_L RALT C              &kp V    &kp B                                &kp HOME      &kp PAGE_UP                              &kp N          &kp M    &BHT_KP_R RALT COMMA          &kp DOT           &kp FSLH             &kp RSHFT
-&mo 0      &none             &none             &none              &none                              &kp BSPC   &kp DEL    &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                     &none               &none              &none             &none                &mo 0
-            >;
-        };
-
-        L02_COLEMAK-DHM {
-            bindings = <
-&kp ESC    &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4        &kp NUMBER_5   &kp GRAVE                                                     &kp APOS       &kp N6         &kp N7              &kp N8             &kp N9            &kp N0            &kp ESC
-&kp TAB    &kp Q             &kp W             &kp F              &kp P               &kp B          &kp LC(X)                                                     &kp RC(V)      &kp J          &kp L               &kp U              &kp Y             &kp SEMI          &kp TAB
-&kp CAPS   &BHT_KP_L LWIN A  &BHT_KP_L LALT R  &BHT_KP_L LCTRL S  &BHT_KP_L LSHIFT T  &BHT_MO_L 6 G  &kp LC(C)  &kp LC(Z)  &none         &none          &kp RC(Y)  &kp RC(RS(V))  &BHT_MO_R 6 M  &BHT_KP_R RSHIFT N  &BHT_KP_R RCTRL E  &BHT_KP_R LALT I  &BHT_KP_R RWIN O  &kp CAPS
-&kp LSHFT  &kp Z             &kp X             &BHT_KP_L RALT C              &kp D    &kp V                                &kp HOME      &kp PAGE_UP                              &kp K          &kp H    &BHT_KP_R RALT COMMA          &kp DOT           &kp FSLH          &kp RSHFT
-&mo 0      &none             &none             &none              &none                              &kp BSPC   &kp DEL    &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                     &none               &none              &none             &none             &mo 0
-            >;
-        };
-
-        L03_DVORAK {
-            bindings = <
-&kp ESC    &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4        &kp NUMBER_5   &kp GRAVE                                                     &kp APOS       &kp N6         &kp N7              &kp N8             &kp N9            &kp N0            &kp ESC
-&kp TAB    &kp APOS          &kp COMMA         &kp DOT            &kp P               &kp Y          &kp LC(X)                                                     &kp RC(V)      &kp F          &kp G               &kp C              &kp R             &kp L             &kp TAB
-&kp CAPS   &BHT_KP_L LWIN A  &BHT_KP_L LALT O  &BHT_KP_L LCTRL E  &BHT_KP_L LSHIFT U  &BHT_MO_L 6 I  &kp LC(C)  &kp LC(Z)  &none         &none          &kp RC(Y)  &kp RC(RS(V))  &BHT_MO_R 6 D  &BHT_KP_R RSHIFT H  &BHT_KP_R RCTRL T  &BHT_KP_R LALT N  &BHT_KP_R RWIN S  &kp CAPS
-&kp LSHFT  &kp SEMI          &kp Q             &BHT_KP_L RALT J              &kp K    &kp X                                &kp HOME      &kp PAGE_UP                              &kp B          &kp M    &BHT_KP_R RALT W              &kp V             &kp Z             &kp RSHFT
-&mo 0      &none             &none             &none              &none                              &kp BSPC   &kp DEL    &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                     &none               &none              &none             &none             &mo 0
-            >;
-        };
-
-        L04 {
-            bindings = <
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
-        L05 {
-            bindings = <
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
-        L06_SYMBOLS {
-            bindings = <
-&none  &none                  &none       &none          &none              &none         &none                                     &none   &kp K_CALCULATOR      &kp BACKSLASH  &kp FSLH  &kp RS(N8)  &kp MINUS             &none
-&none  &kp LS(LEFT_BRACKET)   &kp LBKT    &kp RBKT       &kp LS(N9)         &kp RS(N0)    &none                                     &none   &kp RS(NUMBER_4)      &kp N7         &kp N8    &kp N9      &kp RS(EQUAL)         &none
-&none  &kp LS(NUMBER_2)       &kp LS(N1)  &kp EQUAL      &kp LS(BACKSLASH)  &kp LS(N7)    &none   &none   &none      &none  &none   &none   &kp RA(NUMBER_5)      &kp N4         &kp N5    &kp N6      &kp RS(NUMBER_5)      &none
-&none  &kp LS(RIGHT_BRACKET)  &kp LS(N3)  &kp RA(COMMA)  &kp LS(MINUS)      &kp LS(SEMI)                  &none      &none                  &kp RA(RS(NUMBER_4))  &kp N1         &kp N2    &kp N3      &kp RA(RS(NUMBER_6))  &none
-&none  &none                  &none       &none          &none                            &trans  &trans  &none      &none  &trans  &trans                        &kp COMMA      &kp N0    &kp DOT     &kp SEMICOLON         &none
-            >;
-        };
-
-L00_BASE {
-    bindings = <
-    // ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮
-        &none                    &kp F1                   &kp F2                   &kp F3                   &kp F4                   &kp F5                   &kp F11                                                                                                                      &kp F12                  &kp F6                   &kp F7                   &kp F8                   &kp F9                   &kp F10                  &none
-    // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
-        &none                    &none                    &none                    &none                    &none                    &none                    &rgb_ug RGB_MEFS_CMD 5                                                                                                       &rgb_ug RGB_MEFS_CMD 5   &none                    &none                    &none                    &none                    &none                    &none
-    // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
-        &none                    &none                    &none                    &none                    &none                    &none                    &bootloader              &none                    &none                    &none                    &none                    &bootloader              &none                    &none                    &none                    &none                    &none                    &none
-    // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
-        &none                    &none                    &none                    &none                    &none                    &none                                                                      &none                    &none                                                                      &none                    &none                    &none                    &none                    &none                    &none
-    // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
-        &none                    &none                    &none                    &none                    &none                                             &none                    &none                    &none                    &none                    &none                    &none                                             &none                    &none                    &none                    &none                    &none
-    // ╰────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────╯
-    >;
-};
+        #include "custom/adv360/layer_00_base.dtsi"
+        #include "custom/adv360/layer_01_qwerty.dtsi"
+        #include "custom/adv360/layer_02_colemak.dtsi"
+        #include "custom/adv360/layer_03_dvorak.dtsi"
+        #include "custom/adv360/layer_04_empty.dtsi"
+        #include "custom/adv360/layer_05_empty.dtsi"
     };
 };
