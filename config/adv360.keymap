@@ -350,6 +350,6 @@
             >;
         };
 
-        #include "custom/adv360/layer_base.h"
+        #include "custom/adv360/layer_base.dtsi"
     };
 };
