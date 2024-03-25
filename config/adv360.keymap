@@ -6,66 +6,17 @@
 
 #include "custom/adv360/vars.h"
 
-#include "custom/adv360/kp_base.h"
-#include "custom/adv360/kp_colemak.h"
-#include "custom/adv360/kp_dvorak.h"
-#include "custom/adv360/kp_qwerty.h"
+#include "custom/adv360/key_positions-base.h"
+#include "custom/adv360/key_positions-colemak.h"
+#include "custom/adv360/key_positions-dvorak.h"
+#include "custom/adv360/key_positions-qwerty.h"
 
 / {
     behaviors {
-        BHT_KP_R: BHT_KP_R {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BHT_KP_R";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <1000>;
-            quick-tap-ms = <500>;
-            require-prior-idle-ms = <250>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
-            hold-trigger-on-release;
-        };
-
-        BHT_KP_L: BHT_KP_L {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BHT_KP_L";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <1000>;
-            quick-tap-ms = <500>;
-            require-prior-idle-ms = <250>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
-        };
-
-        BHT_MO_R: BHT_MO_R {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BHT_MO_R";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <1000>;
-            quick-tap-ms = <500>;
-            require-prior-idle-ms = <250>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
-            hold-trigger-on-release;
-            bindings = <&mo>, <&kp>;
-        };
-
-        BHT_MO_L: BHT_MO_L {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BHT_MO_L";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <1000>;
-            quick-tap-ms = <500>;
-            require-prior-idle-ms = <250>;
-            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75>;
-            hold-trigger-on-release;
-            bindings = <&mo>, <&kp>;
-        };
+        #include "custom/adv360/behavior-hold_tap-kp-left.dtsi"
+        #include "custom/adv360/behavior-hold_tap-kp-right.dtsi"
+        #include "custom/adv360/behavior-hold_tap-mo-left.dtsi"
+        #include "custom/adv360/behavior-hold_tap-mo-right.dtsi"
     };
 
     combos {
@@ -240,11 +191,11 @@
     keymap {
         compatible = "zmk,keymap";
 
-        #include "custom/adv360/layer_00_base.dtsi"
-        #include "custom/adv360/layer_01_qwerty.dtsi"
-        #include "custom/adv360/layer_02_colemak.dtsi"
-        #include "custom/adv360/layer_03_dvorak.dtsi"
-        #include "custom/adv360/layer_04_empty.dtsi"
-        #include "custom/adv360/layer_05_empty.dtsi"
+        #include "custom/adv360/layer_00-base.dtsi"
+        #include "custom/adv360/layer_01-qwerty.dtsi"
+        #include "custom/adv360/layer_02-colemak.dtsi"
+        #include "custom/adv360/layer_03-dvorak.dtsi"
+        #include "custom/adv360/layer_04-empty.dtsi"
+        #include "custom/adv360/layer_05-empty.dtsi"
     };
 };

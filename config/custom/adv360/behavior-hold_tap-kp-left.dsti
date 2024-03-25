@@ -1,0 +1,15 @@
+BHT_KP_L: BHT_KP_L {
+    compatible = "zmk,behavior-hold-tap";
+    
+    label = "BHT_KP_L";
+    bindings = <&kp>, <&kp>;
+    #binding-cells = <2>;
+    flavor = "balanced";
+
+    tapping-term-ms = <1000>;
+    quick-tap-ms = <500>;
+    require-prior-idle-ms = <250>;
+
+    hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59>;
+    hold-trigger-on-release;
+};
