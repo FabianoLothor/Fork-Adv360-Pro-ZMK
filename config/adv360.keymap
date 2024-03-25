@@ -13,7 +13,6 @@
 
 / {
     behaviors {
-                                behavior-hold_tap-kp-left
         #include "custom/adv360/behavior-hold_tap-kp-left.dtsi"
         #include "custom/adv360/behavior-hold_tap-kp-right.dtsi"
         #include "custom/adv360/behavior-hold_tap-mo-left.dtsi"
