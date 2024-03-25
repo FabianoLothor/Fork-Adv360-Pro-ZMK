@@ -8,3 +8,6 @@
 #define L03 3 // DVORAK
 #define L04 4 //
 #define L05 5 //
+#define L06 6 // SYMBOLS
+#define L07 7 // NAVIGATION
+#define L08 8 // KEYPAD

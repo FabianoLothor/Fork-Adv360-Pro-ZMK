@@ -1,7 +1,7 @@
-BHT_MO_L: BHT_MO_L {
+B_HT_MO_L: B_HT_MO_L {
     compatible = "zmk,behavior-hold-tap";
     
-    label = "BHT_MO_L";
+    label = "B_HT_MO_L";
     bindings = <&mo>, <&kp>;
     #binding-cells = <2>;
     flavor = "balanced";

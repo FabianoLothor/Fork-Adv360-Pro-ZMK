@@ -197,5 +197,8 @@
         #include "custom/adv360/layer_03-dvorak.dtsi"
         #include "custom/adv360/layer_04-empty.dtsi"
         #include "custom/adv360/layer_05-empty.dtsi"
+        #include "custom/adv360/layer_06-symbols.dtsi"
+        #include "custom/adv360/layer_07-navigation.dtsi"
+        #include "custom/adv360/layer_08-keypad.dtsi"
     };
 };

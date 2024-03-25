@@ -1,7 +1,7 @@
-BHT_KP_R: BHT_KP_R {
+B_HT_KP_R: B_HT_KP_R {
     compatible = "zmk,behavior-hold-tap";
     
-    label = "BHT_KP_R";
+    label = "B_HT_KP_R";
     bindings = <&kp>, <&kp>;
     #binding-cells = <2>;
     flavor = "balanced";
